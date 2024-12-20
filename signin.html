@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo44.jpg" alt="">
+    </div>
+
+    <div class="signup">
+        
+            <h1 style="display: grid; justify-content: center;">SIGN IN</h1> <br>
+            <div class="right">
+            
+    
+            <label for="name" class="ramu">Email: </label>
+            <input type="email" name="email" id="email">
+            <span id="emailError" class="404"></span><br><br>
+    
+            <label for="name" class="ramu">Password: </label>
+            <input type="password" name="pass" id="pass">
+            <span id="passError" class="404"></span><br><br>
+    
+            
+    
+            <center><button type="button" class="sign-up" onclick="PhirseSahiBharna()">CLICK!</button></center><br>
+            <span>
+                <a href="signup_page.html" style="color:maroon; display: flex; justify-content: center; font-weight:900; margin-top: 30px;">New here? Create an account.</a>
+            </span></div></div>
+            <p>© 2024-2028 Adopt Me Pet Services Private Limited. All Rights Reserved.</p>
+            <script>
+                function PhirseSahiBharna() {
+      document.getElementById("emailError").textContent = "";
+      document.getElementById("passError").textContent = "";
+
+      let haan = true;
+
+      const email = document.getElementById("email").value.trim();
+      const emailpattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if(email === ""){
+        document.getElementById("emailError").textContent = "Please enter your email!";
+        haan = false;
+      }
+      else if(!emailpattern.test(email)){
+        document.getElementById("emailError").textContent = "Please enter a valid email format!";
+        haan = false;
+      }
+
+      const pass = document.getElementById("pass").value.trim();
+      const UpperCheck = /[A-Z]/;
+      const SpecialCheck = /[@_*.]/;
+      if(pass === ""){
+        document.getElementById("passError").textContent = "Please enter password!";
+        haan = false;
+      }
+      else if(pass.length<6){
+        document.getElementById("passError").textContent = "Please must contain atleast 6 digits!";
+        haan = false;
+      }
+      else if(!UpperCheck.test(pass)){
+        document.getElementById("passError").textContent = "Please must be atleat one upper case letter!";
+        haan = false;
+      }
+      else if(!SpecialCheck.test(pass)){
+        document.getElementById("passError").textContent = "Please must be atleat special character!";
+        haan = false;
+      }
+      if(haan){
+        window.open('petsdoption.html','_blank');
+      }
+    }
+            </script>
+</body>
+</html>

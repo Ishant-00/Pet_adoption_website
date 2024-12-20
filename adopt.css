@@ -1,0 +1,80 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.profile1{
+    height: 350px;
+    width: 450px;
+    display: flex;
+    float: right;
+    margin-right: 150px;
+    border: 2px solid;
+    margin-top: 180px;
+    background-image: url('bgimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: rgba(241, 194, 63, 0.4) 5px 5px, rgba(237, 228, 41, 0.3) 10px 10px, rgba(243, 247, 33, 0.2) 15px 15px, rgba(195, 228, 30, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+   
+}
+.profile1:hover{
+    transform: scale(1.1);
+    transition-duration: .5s;
+    
+}
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    width: 930px;
+    height:auto;
+    /* border: 2px solid; */
+    margin-top: 80px;
+    margin-left: 10px;
+    font-size:xx-large;
+    font-weight: 900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+   
+}
+body{
+    background-image: url('lasttt.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#pp{
+    display: flex;
+    justify-content: center;
+    color:black;
+    font-size:large;
+    font-weight: 700;
+    /* text-align: center; */
+}
+h1{
+    color:red;
+    text-decoration: underline;
+    font-variant: small-caps;
+    text-shadow:0px 0px 6px white;
+   
+}
+#pop{
+    text-align: left;
+    font-size:20px;
+    font-weight: 900;
+}
+a{
+    text-decoration: none;
+    color: brown;
+}
+#butt{
+    border-radius: 6px;
+    background-color:black;
+    color: white;
+    width: 150px;
+    padding: 3px;
+}
